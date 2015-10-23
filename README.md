@@ -1,19 +1,14 @@
 # HerokuBuildpackTest
 
-**TODO: Add description**
+Sample app to test with the [Heroku Elixir Buildpack](http://github.com/HashNuke/heroku-buildpack-elixir)
 
-## Installation
+## Usage
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+To create an app run the following commands:
 
-  1. Add heroku_buildpack_test to your list of dependencies in `mix.exs`:
-
-        def deps do
-          [{:heroku_buildpack_test, "~> 0.0.1"}]
-        end
-
-  2. Ensure heroku_buildpack_test is started before your application:
-
-        def application do
-          [applications: [:heroku_buildpack_test]]
-        end
+```
+$ git clone https://github.com/HashNuke/heroku-buildpack-elixir-test.git
+$ cd heroku-buildpack-elixir-test
+$ heroku create --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
+$ git push heroku master
+```
